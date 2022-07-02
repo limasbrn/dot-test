@@ -19,6 +19,9 @@ header {
     justify-content: center;
     text-align: center;
 }
+#desktop_img{
+    display: none;
+}
 .section-two{
     height: fit-content;
     background-color: var(--cor-bg-gray-principal);
@@ -61,6 +64,9 @@ header {
     text-align: center;
     padding-bottom: 20px;
 }
+.div_txt_sec_three h1{
+    font-size: 33px;
+}
 .div_txt_sec_three p{
    padding: 15px 5px 0px 5px;
 }
@@ -77,5 +83,34 @@ footer{
     align-items: center;
     background-color: var(--cor-bg-gray-principal);
     font-weight: bolder;
+    font-size: 24px;
+}
+
+/*============media queries=============*/
+@media screen and (min-width:900px) {
+    header{
+        display: none;
+    }
+    #mobile_img{
+        display:none;
+    }
+    #desktop_img{
+        display:flex;
+    }
+    .section-two{
+        display:flex;
+        padding: 50px 100px;
+        gap:100px;
+    }
+    .section-three{
+        display:flex;
+        padding: 30px 100px;
+        gap:50px;
+        align-items: center;
+    }
+    .div_txt_sec_three{
+        text-align: left;
+        padding-bottom: 0px;
+    }
 }
 
